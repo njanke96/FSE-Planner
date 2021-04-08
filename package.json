@@ -36,14 +36,6 @@
     "electron-clean": "rimraf ./dist",
     "electron-dist-win": "npx electron-packager . --out ./dist"
   },
-  "build": {
-    "extends": null,
-    "win": {
-      "target": "portable",
-      "icon": "visual_assets/winicon.ico"
-    }
-  },
-  "files": ["build/index.html"],
   "eslintConfig": {
     "extends": "react-app"
   },
