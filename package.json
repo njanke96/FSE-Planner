@@ -34,7 +34,7 @@
     "electron-start": "npm run build && electron .",
     "electron-start-nobuild": "electron .",
     "electron-clean": "rimraf ./dist",
-    "electron-dist-win": "npx electron-packager . --out ./dist"
+    "electron-dist-win": "electron-packager . --out ./dist --icon=\"visual_assets/winicon.ico\" && rimraf ./dist/fseplanner-win32-x64/resources/app/node_modules"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,6 +54,7 @@
   "homepage": ".",
   "devDependencies": {
     "electron": "^12.0.2",
+    "electron-packager": "^15.2.0",
     "rimraf": "^3.0.2"
   }
 }
